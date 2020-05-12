@@ -1,0 +1,12 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Miniaturization is a key goal in every field of electronic development. Higher efficiency and lower amount of material used for a given purpose go hand in hand. Improving these metrics means cheaper products in the long run. Since the size of magnetic components in a power converter is inversely proportional to the switching frequency, it is also beneficial to raise the switching frequency to the point where it is in equilibrium with the capacitive losses of the MOSFET. Other factors also apply for selecting the switching frequency but investigating them is out of the scope of this report. \\
+
+With the level of integration increasing in printed circuit board assemblies (PCBAs), the effect of parasitic inductances, capacitances and resistances becomes more of a concern. In the case of switch mode power converters, the high-frequency gate signal of power MOSFETs is exceptionally susceptible to noise. For this reason, shielding the gate signal from other, quickly changing and/or high-amplitude signals is crucial. Providing the shortest possible return path for the driver current is also important. \\
+
+One ever-present source of noise is the complementary switch element of a switching power pole. Creating a PCB layout with as small as possible parasitic inductances, capacitances and resistances is an even more crucial task. \\
+
+It can be difficult to measure voltage and especially current waveforms in tightly-packed PCBAs. Installing testpoints introduces substantial parasitics. Touching the assemblies with a voltage probe introduces the parasitics of the measurement instrument. As these are comparable to those of a good layout, the engineer cannot be certain that they observe the behaviour of the original circuit or that of the superseding one. Modifying the circuit to accept a current probe is a characteristic modification as well. \\
+
+The aforementioned reasons necessitate the use of finite element modeling techniques. Creating models of circuits that can be verified by measurement is the first step toward being able to consistently model super-miniature circuits. Extracting parasitics of a known, well-designed switching circuit and applying them to the SPICE model of this circuit is the scope of this project. Exploring modelling methods and the usage of associated software makes performing more complicated future modelling tasks possible. \\
